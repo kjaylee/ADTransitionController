@@ -12,14 +12,14 @@
 @interface ADTransformTransition : ADTransition {
     CATransform3D _inLayerTransform;
     CATransform3D _outLayerTransform;
-    CAAnimation * _animation;
+    CAAnimation * _Nullable   _animation;
 }
 
-@property (readonly) CAAnimation * animation;
+@property (readonly) CAAnimation * _Nullable animation;
 @property (readonly) CATransform3D inLayerTransform;
 @property (readonly) CATransform3D outLayerTransform;
 
-- (id)initWithAnimation:(CAAnimation *)animation inLayerTransform:(CATransform3D)inTransform outLayerTransform:(CATransform3D)outTransform;
-- (id)initWithDuration:(CFTimeInterval)duration;
-- (id)initWithDuration:(CFTimeInterval)duration sourceRect:(CGRect)sourceRect;
+- (_Nullable id)initWithAnimation:(CAAnimation * _Nullable)animation inLayerTransform:(CATransform3D)inTransform outLayerTransform:(CATransform3D)outTransform;
+- (_Nullable id)initWithDuration:(CFTimeInterval)duration;
+- (_Nullable id)initWithDuration:(CFTimeInterval)duration sourceRect:(CGRect)sourceRect;
 @end

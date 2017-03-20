@@ -35,7 +35,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = [NSString stringWithFormat:@"Index: %d", self.index];
+    self.title = [NSString stringWithFormat:@"Index: %ld", (long)self.index];
     
     UIColor * color = nil;
     switch (_index % 4) {

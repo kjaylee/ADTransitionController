@@ -7,7 +7,9 @@
 //
 
 #import "ADCarrouselTransition.h"
+@interface ADCarrouselTransition () <CAAnimationDelegate>
 
+@end
 @implementation ADCarrouselTransition
 
 - (id)initWithDuration:(CFTimeInterval)duration orientation:(ADTransitionOrientation)orientation sourceRect:(CGRect)sourceRect {

@@ -8,6 +8,10 @@
 
 #import "ADCubeTransition.h"
 
+@interface ADCubeTransition () <CAAnimationDelegate>
+
+@end
+
 @implementation ADCubeTransition
 
 - (id)initWithDuration:(CFTimeInterval)duration orientation:(ADTransitionOrientation)orientation sourceRect:(CGRect)sourceRect {

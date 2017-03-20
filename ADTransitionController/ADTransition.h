@@ -46,6 +46,7 @@ typedef enum {
 @property (nonatomic, readonly) NSTimeInterval duration; // abstract
 
 + (ADTransition *)nullTransition;
+- (void)animationDidStop:(CAAnimation *)animation finished:(BOOL)flag;
 - (ADTransition *)reverseTransition;
 - (NSArray *)getCircleApproximationTimingFunctions;
 @end

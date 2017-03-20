@@ -8,7 +8,7 @@
 
 #import "ADTransformTransition.h"
 
-@interface ADTransformTransition (Private)
+@interface ADTransformTransition (Private) <CAAnimationDelegate>
 - (void)_initADTransformTransitionTemplateCrossWithDuration:(CFTimeInterval)duration;
 @end
 

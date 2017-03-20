@@ -8,6 +8,9 @@
 
 #import "ADCrossTransition.h"
 
+@interface ADCrossTransition () <CAAnimationDelegate>
+
+@end
 @implementation ADCrossTransition
 
 - (id)initWithDuration:(CFTimeInterval)duration {

@@ -8,6 +8,10 @@
 
 #import "ADDualTransition.h"
 
+@interface ADDualTransition () <CAAnimationDelegate>
+
+@end
+
 @implementation ADDualTransition
 @synthesize inAnimation = _inAnimation;
 @synthesize outAnimation = _outAnimation;
