@@ -69,7 +69,9 @@
     UIView * containerView = transitionContext.containerView;
     UIView * fromView = fromViewController.view;
     UIView * toView = toViewController.view;
-
+    
+    containerView.backgroundColor = [UIColor blackColor];
+    
     CATransform3D sublayerTransform = CATransform3DIdentity;
     sublayerTransform.m34 = 1.0 / -AD_Z_DISTANCE;
     containerView.layer.sublayerTransform = sublayerTransform;
